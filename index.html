@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KlashApp - Professional Secure Messenger</title>
     
     <!-- Firebase & PeerJS CDN SDKs -->
@@ -26,10 +26,30 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-tap-highlight-color: transparent; }
-        body { background-color: #0b141a; color: var(--wa-text-primary); display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; }
         
-        .whatsapp-container { width: 100%; max-width: 480px; height: 100vh; max-height: 950px; background: var(--wa-bg-dark); display: flex; flex-direction: column; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); }
-        @media(min-width: 481px) { .whatsapp-container { border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.6); } }
+        body { 
+            background-color: #0b141a; 
+            color: var(--wa-text-primary); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0;
+        }
+        
+        .whatsapp-container { 
+            width: 100%; 
+            max-width: 480px; 
+            height: 100vh; 
+            max-height: 100dvh; 
+            background: var(--wa-bg-dark); 
+            display: flex; 
+            flex-direction: column; 
+            position: relative; 
+            overflow: hidden; 
+            border: 1px solid rgba(255,255,255,0.08); 
+        }
+        @media(min-width: 481px) { .whatsapp-container { border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.6); height: 950px; } }
 
         /* AUTH MODAL */
         #auth-modal { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--wa-bg-dark); z-index: 1000; display: flex; flex-direction: column; justify-content: space-between; padding: 36px 24px; text-align: center; }
